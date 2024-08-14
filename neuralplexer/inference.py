@@ -48,12 +48,12 @@ def create_full_pdb_with_zero_coordinates(sequence: str, filename) -> None:
     # Simplified representation of side chain atoms for each amino acid
     side_chain_atoms = {
         "A": ["CB"],
-        "R": ["CB", "CG", "CD", "NE", "CZ"],
-        "N": ["CB", "CG", "OD1"],
-        "D": ["CB", "CG", "OD1"],
+        "R": ["CB", "CG", "CD", "NE", "CZ", "NH1", "NH2"],
+        "N": ["CB", "CG", "OD1", "ND2"],
+        "D": ["CB", "CG", "OD1", "OD2"],
         "C": ["CB", "SG"],
-        "E": ["CB", "CG", "CD"],
-        "Q": ["CB", "CG", "CD", "OE1"],
+        "E": ["CB", "CG", "CD", "OE1", "OE2"],
+        "Q": ["CB", "CG", "CD", "OE1", "NE2"],
         "G": [],
         "H": ["CB", "CG", "ND1", "CD2", "CE1", "NE2"],
         "I": ["CB", "CG1", "CG2", "CD1"],
